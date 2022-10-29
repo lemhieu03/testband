@@ -1,0 +1,578 @@
+            /* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 2000px;
+    
+}
+/* 
+1. từ ngoài vào trong
+2. từ trên xuống
+3. tổng quan đến chi tiết
+*/
+
+
+/* 
+1. vị trí
+2. kích thước 
+3. màu sắc
+4. kiểu dáng
+*/
+
+.text-white {
+    color: #fff;
+}
+
+#main {
+
+}
+
+/* comment */
+.text-center {
+    text-align: center !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float:left;
+    padding: 0 8px;
+}
+
+.col-third {
+    width: 33.3333%;
+}
+
+.col-harl {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background: #000;
+    z-index: 1;
+}
+
+
+
+#nav{
+    display:  inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+    
+}
+
+#nav > li  > a {
+    color: white;
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 46px;
+    display: block;
+    text-transform: uppercase;
+}
+
+#nav >li >a:hover,
+.subnav li a:hover{
+    color: #000;
+    background: #ccc;
+}
+
+
+
+        /*----------- xo duong----------- */
+#nav li {
+    position: relative;
+}
+
+#nav .subnav{
+    position:absolute;
+    background-color: white;
+    min-width: 160px;
+}
+
+#nav li:hover .subnav a{
+    display: block;
+}
+
+.subnav  {
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+    text-decoration: none;
+    display: none;
+    color: #000;
+    padding: 8px 16px;
+}
+#header .search-btn {
+    float: right;
+    line-height: 22px;
+    background-color: rgb(12, 12, 12);
+    padding: 12px 24px;
+    color: white;
+    font-size: 14px;
+}
+#header .search-btn:hover {
+    cursor: pointer;
+    background: red;
+}
+        /*----------- silider -----------*/
+
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(./img/anh1.jpg) top center / cover no-repeat;
+    
+}
+#slider {
+    color: white;
+    position: relative;
+}
+#slider .text-contact   {
+    position:absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 32px 16px;
+    font-weight: 400;
+}
+#silide .text-contact .text-heading {
+    
+    margin: 10px 0;
+}
+#slider .text-contact .text-description {
+    margin: 15px 0;
+    text-shadow: 0 0 1px #000;
+}
+
+
+        /*----------- contact -----------*/
+#contact {
+
+}
+
+#contact .contac-section {
+    margin: 0 112px;
+    padding: 64px 16px;
+    
+    
+}
+
+.contac-section .contact-heading {
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+.contac-section .contact-sub-heading {
+    text-align: center;
+    margin:15px 0;
+    font-size: 15px;
+    opacity: 0.6;
+    line-height: 1.5;
+    font-style:italic;
+}
+.contac-section p {
+    text-align: justify;
+    margin:15px 0;
+    line-height: 1.4;
+} 
+
+        /*  the band */
+#contact #members-list{
+    overflow: hidden;
+}
+
+
+#contact .member-name {
+    text-align: center;
+}
+#contact .member-img {
+    text-align: center;
+    width: 60%;
+    border-radius: 4px;
+}
+    /*     the tour      */
+#contact .tour-section {
+    background-color: #000;
+   
+}
+
+.tour-section .ticket-list {
+    background-color: #fff;
+    list-style: none;
+}
+
+.ticket-list li {
+    padding: 8px 16px;
+    font-size: 15px;
+    color: #757575;
+    border: 1px solid #ddd;
+}
+
+.ticket-list .soil-out {
+    background-color: red;
+    color: #fff;
+    padding: 0px 8px;
+    margin-left: 16px;
+}
+
+.ticket-list .qurity {
+    float:right;
+    background-color: black;
+    color: #fff;
+    padding: 0px 8px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+    /* plance  */
+.plance-list {
+    overflow: hidden;
+    margin-top: 32px;
+    margin-bottom:  48px;
+    
+}
+
+
+
+.plance-img {
+    width: 100%;
+    display: block;
+
+}
+
+.plance-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    color: #000;
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.plance-heading {
+    font-size: 15px;
+}
+
+.plance-timember {
+    opacity: 0.6;
+}
+
+.plance-content {
+
+}
+
+.plance-buy {
+    text-decoration: none;
+    background-color: #000;
+    color: white;
+    padding: 15px 15px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.plance-buy:hover {
+   opacity: 0.6;
+}
+
+    /*  MODAL  */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.open {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modal-container .modal-heading {
+    background: #019788;
+    padding: 42px 16px;
+    font-size: 30px;
+    color: #fff;
+}
+.icon-suit {
+    margin-right: 15px;
+}
+
+.modal-container {
+    position: relative;
+    width: 900px; 
+    max-width: calc(100%-32px);
+    min-height: 200px;
+    animation: Modalfadein ease 0.6s;
+}
+
+.lose {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.lose:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-container .modal-body {
+    background: #fff;
+    padding: 0.150px 16px;
+   
+}
+
+.modal .modal-label {
+    margin-top: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    left: 0;
+}
+
+.modal .modal-input {
+    padding: 8px;
+    margin: 0;
+    font-size: 15px;
+    border:1px solid #ccc;
+    width: 100%;
+    display: flex;
+    left: 0;
+}
+.modal-pay {
+    margin: 16px 0px;
+    background: #019788;
+    color: #fff;
+    padding: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.modal-pay:hover {
+    opacity: 0.8;
+}
+
+.modal-footer {
+    padding:15px 0px 30px 0px;
+    text-align: right;
+    
+}
+.modal-footer a {
+   color: #2196F3;
+}
+
+.cart {
+    margin-right:4px;
+}
+
+@keyframes Modalfadein {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+.CONTACT-CONTENT {
+    margin-top: 48px;
+}
+ .contact-info {
+     font-size: 18px;
+     line-height: 1.5;
+ }
+.contact-info i{
+    width: 30px;
+    display: inline-block;
+  }
+
+.contact-form {
+    font-size: 15px;
+    
+}
+
+.contact-form .form-contact {
+    padding: 10px;
+    border: 1px solid  #ccc;
+    width: 100%;
+    margin-top: 15px;
+   
+}
+
+.contact-form .sutmit {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 11px 16px;
+    margin-top: 15px;
+    float: right;
+   cursor: pointer;
+}
+.contact-form .sutmit:hover {
+    opacity: 0.8;
+}
+
+      /*----------- footer -----------*/
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+#footer i {
+    font-size: 24px;
+}
+
+#footer p {
+    margin: 15px 0;
+}
+    /*  responsion */
+    /* PC*/
+@media (min-width:64em) {
+    .iconmenu{
+            display:none;
+        }
+        
+    }
+    /* giữ PC và Table */
+@media (max-width:63.9375em) { 
+    #footer > i {
+        font-size: 33px;
+        margin: 10px 10px;
+
+    }
+
+    #footer p {
+        font-size: 22px;
+    }
+
+    
+}
+        /* Table */
+@media (min-width:46.25em) and (max-width:63.9375em){
+    #contact .contac-section {
+        margin: 0 16px;
+    }
+    .fa-bars:before, .fa-navicon:before {
+        content: "\f0c9";
+    }
+    
+}
+
+    /* phone */
+@media (max-width:46.1875em) {
+
+    #contact .contac-section {
+        margin: 0 16px;
+        padding: 64px 0px;
+    }
+    .col-third {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .col-harl {
+        width: 100%;
+    }
+    
+
+    #header {
+        overflow: hidden;
+        
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+    }
+    #nav .subnav a {
+        color: #fff;
+        padding: 21px 48px;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #header .search-btn {
+        display: none;
+        
+    }
+    .iconmenu {
+        float: right;
+        line-height: 22px;
+        background-color: rgb(12, 12, 12);
+        padding: 12px 24px;
+        color: white;
+        font-size: 14px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .iconmenu:hover {
+        opacity: 0.6;
+    }
+    #nav {
+        display: block;
+    }
+
+}
+
